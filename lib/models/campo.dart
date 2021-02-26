@@ -30,7 +30,7 @@ class Campo {
   }
 
   void abrir() {
-    if (_aberto) {
+    if (_aberto || marcado) {
       return;
     }
 
