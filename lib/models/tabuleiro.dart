@@ -56,7 +56,7 @@ class Tabuleiro {
     while (sorteadas < qtdeBombas) {
       int i = Random().nextInt(_campos.length);
 
-      if (_campos[i].minado) {
+      if (!_campos[i].minado) {
         sorteadas++;
         _campos[i].minar();
       }
